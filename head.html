@@ -52,7 +52,7 @@
   .section--dark { background: var(--green-dark); color: #fff; }
   .section--dark h2, .section--dark p { color: #fff; }
   .section--gray { background: var(--bg-light); }
-  .section--teal { background: #0f2a1e; }
+  .section--teal { background: linear-gradient(180deg, #cff4f2 0%, #ffffff 100%); }
 
   /* ── Stars ── */
   .stars { color: var(--green-light); letter-spacing: 2px; }
@@ -285,8 +285,8 @@
   /* ── Bonus section ── */
   .bonus-grid { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
   .bonus-box {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.15);
+    background: #fff;
+    border: 1px solid var(--green-light);
     border-radius: var(--radius);
     padding: 20px 16px;
     width: 140px;
@@ -306,7 +306,7 @@
     letter-spacing: .5px;
     text-transform: uppercase;
   }
-  .bonus-box__title { font-size: 12px; font-weight: 700; color: #fff; margin-top: 8px; line-height: 1.3; }
+  .bonus-box__title { font-size: 12px; font-weight: 700; color: var(--green-dark); margin-top: 8px; line-height: 1.3; }
   .bonus-box__icon { font-size: 36px; margin: 8px 0; }
 
   /* ── Pain points ── */
