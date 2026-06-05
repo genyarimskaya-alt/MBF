@@ -333,13 +333,13 @@
 
   /* ── Hero ── */
   .hero {
-    background: var(--green-dark);
-    color: #fff;
+    background: linear-gradient(180deg, #cff4f2 0%, #ffffff 100%);
+    color: var(--text-dark);
     padding: 60px 0 48px;
   }
-  .hero h1 { color: #fff; }
-  .hero__meta { font-size: 14px; color: rgba(255,255,255,0.65); margin: 8px 0 20px; }
-  .hero__sub { font-size: 17px; color: rgba(255,255,255,0.85); margin-bottom: 8px; }
+  .hero h1 { color: var(--green-dark); }
+  .hero__meta { font-size: 14px; color: var(--text-light); margin: 8px 0 20px; }
+  .hero__sub { font-size: 17px; color: var(--text-mid); margin-bottom: 8px; }
   .hero__layout { display: grid; grid-template-columns: 1fr 380px; gap: 48px; align-items: start; }
   @media (max-width: 860px) { .hero__layout { grid-template-columns: 1fr; } }
 
