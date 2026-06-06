@@ -54,6 +54,29 @@
   .section--gray { background: var(--bg-light); }
   .section--teal { background: linear-gradient(180deg, #cff4f2 0%, #ffffff 100%); }
 
+  /* ── Hero animations ── */
+  @keyframes heroFadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes heroFadeIn {
+    from { opacity: 0; transform: scale(0.97); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  @keyframes heroPulseGlow {
+    0%, 100% { box-shadow: 0 4px 24px rgba(0,0,0,0.10); }
+    50%       { box-shadow: 0 8px 48px rgba(78,205,196,0.35); }
+  }
+  .hero-animate-title {
+    animation: heroFadeUp 0.7s ease both;
+  }
+  .hero-animate-img {
+    animation: heroFadeIn 0.9s ease 0.3s both, heroPulseGlow 3.5s ease 1.2s infinite;
+  }
+  .hero-animate-text {
+    animation: heroFadeUp 0.7s ease 0.6s both;
+  }
+
   /* ── Stars ── */
   .stars { color: var(--green-light); letter-spacing: 2px; }
 
