@@ -67,6 +67,10 @@
     0%, 100% { box-shadow: 0 4px 24px rgba(0,0,0,0.10); }
     50%       { box-shadow: 0 8px 48px rgba(78,205,196,0.35); }
   }
+  @keyframes btnPulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(26,112,96,0.35); transform: scale(1); }
+    50%       { box-shadow: 0 6px 36px rgba(26,112,96,0.60); transform: scale(1.03); }
+  }
   .hero-animate-title {
     animation: heroFadeUp 0.7s ease both;
   }
@@ -96,7 +100,8 @@
     transition: background .2s, transform .15s;
     letter-spacing: .3px;
   }
-  .btn-cta:hover { background: #125448; transform: translateY(-2px); }
+  .btn-cta { animation: btnPulse 2.2s ease-in-out infinite; }
+  .btn-cta:hover { background: #125448; transform: translateY(-2px); animation: none; box-shadow: 0 6px 32px rgba(26,112,96,0.5); }
   .btn-cta--large { font-size: 20px; padding: 22px 60px; }
   .btn-whatsapp {
     display: inline-flex;
