@@ -440,6 +440,7 @@
   /* ── Responsive ── */
   @media (max-width: 600px) {
     .section { padding: 48px 0; }
+    .btn-cta:not(.testimonial-cta .btn-cta) { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 52px; box-sizing: border-box; }
     .btn-cta { padding: 16px 32px; font-size: 16px; }
     .btn-cta--large { font-size: 17px; padding: 18px 36px; }
     .countdown { font-size: 28px; }
@@ -448,6 +449,45 @@
     .step-item::after { display: none; }
     .bonus-grid { gap: 10px; }
     .bonus-box { width: 120px; }
+  }
+
+  /* ── Testimonial cards: horizontal scroll carousel on mobile ── */
+  @media (max-width: 768px) {
+    .testimonial-grid {
+      display: flex !important;
+      grid-template-columns: none !important;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 16px !important;
+      padding: 0 16px 16px;
+      scrollbar-width: none;
+      margin: 0 -16px;
+    }
+    .testimonial-grid::-webkit-scrollbar { display: none; }
+    .testimonial-grid .testimonial-card {
+      min-width: 280px;
+      max-width: 85vw;
+      scroll-snap-align: start;
+      flex-shrink: 0;
+    }
+    .testimonial-grid .testimonial-card img { height: auto; border-radius: 12px 12px 0 0; }
+    .testimonial-cta {
+      min-width: 85vw;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .testimonial-cta .btn-cta {
+      width: 100%;
+      min-height: 52px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   /* ── Utility ── */
