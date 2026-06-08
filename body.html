@@ -76,7 +76,7 @@
         </div>
         <p style="margin-top:10px; font-size:14px; color:#c0392b; font-weight:600;">🔴 Noch 8 Plätze zum Aktionspreis verfügbar</p>
         <p style="margin-top:4px; font-size:12px; color:var(--text-light); font-style:italic;">Nach Ablauf des Timers: Preis steigt auf 190 €, alle 7 Bonus-Kurse verfallen.</p>
-        <a href="#price-block" class="btn-cta" style="width:100%; margin-top:24px; margin-bottom:4px;">ZUGANG SICHERN — nur 9 €  →</a>
+        <button onclick="openWidget()" class="btn-cta" style="width:100%; margin-top:24px; margin-bottom:4px;">ZUGANG SICHERN — nur 9 €  →</button>
         <p style="text-align:center; font-size:12px; color:var(--text-light); margin-bottom:12px;">⏳ Angebot läuft ab — sichere dir jetzt deinen Preis</p>
         <div style="font-size:13px; color:var(--text-light); line-height:1.8;">
           <div>🎁 <strong>Nur heute</strong> — 7 Kurse kostenlos</div>
@@ -242,7 +242,7 @@
     </div>
 
     <div class="text-center mt-32">
-      <a href="#price-block" class="btn-cta btn-cta--large">ZUGANG SICHERN — nur 9 €  →</a>
+      <button onclick="openWidget()" class="btn-cta btn-cta--large">ZUGANG SICHERN — nur 9 €  →</button>
       <p style="margin-top:8px; font-size:12px; color:var(--text-light);">⏳ Angebot läuft ab — sichere dir jetzt deinen Preis</p>
       <p style="margin-top:8px; font-size:13px; color:var(--text-light);">🔒 Risikofrei: 14 Tage Geld-zurück-Garantie</p>
     </div>
@@ -322,7 +322,7 @@
       </div>
 
       <div class="testimonial-cta" style="grid-column:1/-1; text-align:center; padding:12px 0;">
-        <a href="#price-block" class="btn-cta">Ich möchte das auch — ZUGANG SICHERN →</a>
+        <button onclick="openWidget()" class="btn-cta">Ich möchte das auch — ZUGANG SICHERN →</button>
       </div>
 
       <!-- Card 5 -->
@@ -382,7 +382,7 @@
       </div>
 
       <div class="testimonial-cta" style="grid-column:1/-1; text-align:center; padding:12px 0;">
-        <a href="#price-block" class="btn-cta">Ich möchte das auch — ZUGANG SICHERN →</a>
+        <button onclick="openWidget()" class="btn-cta">Ich möchte das auch — ZUGANG SICHERN →</button>
       </div>
 
       <!-- Card 9 -->
@@ -442,7 +442,7 @@
       </div>
 
       <div class="testimonial-cta" style="grid-column:1/-1; text-align:center; padding:12px 0;">
-        <a href="#price-block" class="btn-cta">Ich möchte das auch — ZUGANG SICHERN →</a>
+        <button onclick="openWidget()" class="btn-cta">Ich möchte das auch — ZUGANG SICHERN →</button>
       </div>
 
     </div><!-- /grid -->
@@ -527,7 +527,7 @@
 
     <div class="text-center mt-32">
       <p style="color:var(--text-mid); font-size:15px; margin-bottom:20px;">Alle 7 Bonus-Programme sind heute beim Kauf inklusive.</p>
-      <a href="#price-block" class="btn-cta btn-cta--large">Bonus heute sichern →</a>
+      <button onclick="openWidget()" class="btn-cta btn-cta--large">Bonus heute sichern →</button>
     </div>
   </div>
 </section>
@@ -645,7 +645,7 @@
     </div>
 
     <div class="text-center mt-32">
-      <a href="#price-block" class="btn-cta btn-cta--large">ZUGANG SICHERN — nur 9 €  →</a>
+      <button onclick="openWidget()" class="btn-cta btn-cta--large">ZUGANG SICHERN — nur 9 €  →</button>
       <p style="margin-top:8px; font-size:12px; color:var(--text-light);">⏳ Angebot läuft ab — sichere dir jetzt deinen Preis</p>
       <p style="margin-top:8px; font-size:13px; color:var(--text-light);">🔒 Risikofrei: 14 Tage Geld-zurück-Garantie</p>
     </div>
@@ -724,7 +724,7 @@
       <span style="background:#fff; border-radius:50px; padding:6px 16px; font-size:13px; color:var(--green-dark); font-weight:600;">90+ Minuten geführtes Video</span>
       <span style="background:#fff; border-radius:50px; padding:6px 16px; font-size:13px; color:var(--green-dark); font-weight:600;">🎁 7 Bonus-Programme kostenlos nur heute!</span>
     </div>
-    <a href="#price-block" class="btn-cta btn-cta--large">ZUGANG SICHERN — nur 9 €  →</a>
+    <button onclick="openWidget()" class="btn-cta btn-cta--large">ZUGANG SICHERN — nur 9 €  →</button>
     <p style="margin-top:8px; color:var(--text-light); font-size:12px;">⏳ Angebot läuft ab — sichere dir jetzt deinen Preis</p>
     <p style="margin-top:8px; color:var(--text-light); font-size:13px;">🔒 Risikofrei: 14 Tage Geld-zurück-Garantie</p>
   </div>
@@ -754,16 +754,54 @@
     <span style="color: var(--green-light); font-weight: bold; font-size: 18px; margin-left: 6px;">9 €</span>
     <div style="color: #ccc; font-size: 11px;">95 % Rabatt · 14 Tage Garantie</div>
   </div>
-  <a href="#price-block" style="
+  <button onclick="openWidget()" style="
     background: var(--green-mid);
     color: white;
     padding: 12px 20px;
     border-radius: 8px;
     font-weight: bold;
     font-size: 15px;
+    border: none;
+    cursor: pointer;
     text-decoration: none;
     white-space: nowrap;
-  " onmouseover="this.style.background='#125448'" onmouseout="this.style.background='var(--green-mid)'">Jetzt sichern →</a>
+  " onmouseover="this.style.background='#125448'" onmouseout="this.style.background='var(--green-mid)'">Jetzt sichern →</button>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     ZAHLUNGS-WIDGET (xlcrm)
+══════════════════════════════════════════ -->
+<div id="widget-modal" style="
+  display: none;
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 99998;
+  background: rgba(0,0,0,.72);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 16px;
+  box-sizing: border-box;
+">
+  <div id="wm-card" style="
+    background: #fff;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 16px 48px rgba(0,0,0,.5);
+  ">
+    <button onclick="closeWidget()" style="
+      position: absolute; top: 12px; right: 12px; z-index: 10;
+      background: rgba(0,0,0,.09); border: none;
+      width: 36px; height: 36px; border-radius: 50%;
+      cursor: pointer; font-size: 1.2rem; line-height: 1;
+      color: #333; display: flex; align-items: center; justify-content: center;
+    ">✕</button>
+    <script ao-number="9380" ao-widget-id="0GP2gfhP70i4TFtJFJtLug" ao-domain="fp-platform.online"
+            src="https://front.xlcrm.ai/site/widget/widget.min.js"></script>
+  </div>
 </div>
 
 
@@ -798,6 +836,32 @@
      JAVASCRIPT
 ══════════════════════════════════════════ -->
 <script>
+  /* ── Zahlungs-Widget (xlcrm) ── */
+  function openWidget() {
+    var m = document.getElementById('widget-modal');
+    m.style.paddingTop = '16px';
+    m.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    setTimeout(function() {
+      var card = document.getElementById('wm-card');
+      if (!card) return;
+      var screenH = m.clientHeight;
+      var cardH   = card.offsetHeight;
+      var pad     = Math.max(16, Math.floor((screenH - cardH) / 2));
+      m.style.paddingTop = pad + 'px';
+      m.scrollTop = 0;
+    }, 80);
+  }
+  function closeWidget() {
+    var m = document.getElementById('widget-modal');
+    m.style.display    = 'none';
+    m.style.paddingTop = '16px';
+    document.body.style.overflow = '';
+  }
+  document.getElementById('widget-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeWidget();
+  });
+
   /* ── Countdown timer ── */
   (function() {
     var end = Date.now() + (42 * 60 + 10) * 1000;
