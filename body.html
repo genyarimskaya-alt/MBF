@@ -862,9 +862,14 @@
     if (e.target === this) closeWidget();
   });
 
-  /* ── Countdown timer ── */
+  /* ── Countdown timer (localStorage-persistent) ── */
   (function() {
-    var end = Date.now() + (42 * 60 + 10) * 1000;
+    var KEY = 'mbf_timer_end';
+    var end = +localStorage.getItem(KEY);
+    if (!end || end < Date.now()) {
+      end = Date.now() + (42 * 60 + 10) * 1000;
+      localStorage.setItem(KEY, end);
+    }
     function tick() {
       var diff = Math.max(0, end - Date.now());
       var h = Math.floor(diff / 3600000);
